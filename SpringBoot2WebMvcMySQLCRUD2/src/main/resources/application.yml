@@ -1,0 +1,19 @@
+server:
+  port: 9999
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernet:
+        dialect: org.hibernet.dialect.MySQLDialect
+    show-sql: true
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
